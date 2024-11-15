@@ -5,22 +5,11 @@ import Main from './components/Main.vue';
 </script>
 
 <template>
-  <div id="app">
-    <HeaderNav></HeaderNav> <!-- 헤더 -->
-    <Main class="main"></Main> <!-- 메인 콘텐츠 -->
-    <Footer></Footer> <!-- 푸터 -->
-  </div>
+  <HeaderNav></HeaderNav> <!-- 헤더 -->
+  <Main></Main> <!-- 메인 콘텐츠 -->
+  <Footer></Footer> <!-- 푸터 -->
+  <!-- <div id="app">
+  </div> -->
 </template>
 
-<style scoped>
-#app {
-  display: flex;
-  flex-direction: column;
-  height: 100vh; /* 전체 화면 높이 */
-}
-
-.main {
-  flex-grow: 1; /* 남은 공간을 모두 차지하도록 설정 */
-  overflow-y: auto; /* 콘텐츠가 많을 경우 스크롤이 생기도록 설정 */
-}
-</style>
+<style scoped></style>

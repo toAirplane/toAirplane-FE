@@ -11,9 +11,6 @@
 
 <style scoped>
 .footer {
-  position: fixed;  /* 화면 하단에 고정 */
-  bottom: 0;        /* 화면 하단에 붙임 */
-  left: 0;          /* 좌측에 붙임 */
   width: 100%;      /* 화면 너비에 맞게 확장 */
   background-color: #FCF8F4;
   text-align: center;

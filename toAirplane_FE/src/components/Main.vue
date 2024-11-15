@@ -3,9 +3,9 @@ import { defineAsyncComponent } from 'vue';
 </script>
 
 <template>
-  <main class="main-content">
-    <router-view /> <!-- 라우터에 맞는 컴포넌트를 동적으로 표시 -->
-  </main>
+  <router-view /> <!-- 라우터에 맞는 컴포넌트를 동적으로 표시 -->
+  <!-- <main class="main-content">
+  </main> -->
 </template>
 
 <style scoped>

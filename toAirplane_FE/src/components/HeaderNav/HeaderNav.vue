@@ -67,11 +67,6 @@ function toggleLogin() {
       </div>
     </div>
   </header>
-
-  <main>
-    <p>현재 페이지: {{ $route.name }}</p>
-    <!-- main content depending on the current route -->
-  </main>
 </template>
 
 <style scoped>
@@ -93,6 +88,7 @@ function toggleLogin() {
   font-size: 35px;
   color: #35648c;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
 .logo {

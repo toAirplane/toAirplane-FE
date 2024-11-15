@@ -9,10 +9,10 @@ import diarySortCom4 from './DiarySortCom/diarySortCom4.vue';
 import diarySortCom5 from './DiarySortCom/diarySortCom5.vue';
 
 // 선택된 컴포넌트를 저장하는 변수
-const selecteddiarySortCom = ref(null);
+const selecteddiarySortCom = ref(diarySortCom1);
 
 // 선택된 버튼을 저장하는 변수 (색상 변경을 위한 변수)
-const selectedButton = ref(null);
+const selectedButton = ref(1);
 
 // 버튼 클릭 시 컴포넌트를 변경
 function changediarySortCom(diarySortComIndex, buttonIndex) {

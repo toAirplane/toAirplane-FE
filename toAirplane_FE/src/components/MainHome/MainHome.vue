@@ -16,7 +16,9 @@ import TravelInfo from "./TravelInfo.vue";
 
 <style scoped>
 .home {
-    padding-top : 50px;
+    /* 모든 가운데 컴포넌트에 헤더 높이만큼 마진 탑 주기 */
+    margin-top: 80px;
+    /* padding-top : 50px; */
     padding-left: 250px;
     padding-right: 250px;
     font-size: 25px;
