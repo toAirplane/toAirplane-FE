@@ -10,7 +10,7 @@ import { defineAsyncComponent } from 'vue';
 
 <style scoped>
 .main-content {
-  padding: 20px;
+  /* padding: 10px; */
   flex-grow: 1;
   overflow-y: auto;
 }
