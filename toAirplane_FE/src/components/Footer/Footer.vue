@@ -11,23 +11,27 @@
 
 <style scoped>
 .footer {
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-  height: 100px;
+  position: fixed;  /* 화면 하단에 고정 */
+  bottom: 0;        /* 화면 하단에 붙임 */
+  left: 0;          /* 좌측에 붙임 */
+  width: 100%;      /* 화면 너비에 맞게 확장 */
   background-color: #FCF8F4;
   text-align: center;
+  padding: 10px 0;
+  margin: 0;        /* 마진 제거 */
 }
 
 .footer-project-name,
 .footer-team-name {
-    color: #6B625D;
-    font-size: 1rem;
-    margin: 0;
+  color: #a0948c;
+  font-size: 0.9rem;
+  margin: 0;
 }
 
 .footer-ssafy {
-    color: #FFB980;
-    font-size: 0.9rem;
+  color: #ffcba0;
+  font-size: 0.7rem;
+  padding-top: 20px;
+  margin: 0;
 }
 </style>
