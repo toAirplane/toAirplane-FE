@@ -2,7 +2,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 // 페이지 컴포넌트들 import
-import Home from '@/components/Main.vue'
+import Home from '@/components/MainHome/MainHome.vue'
 import FindMap from '@/components/FindMap/FindMap.vue'
 import TravelDiary from '@/components/TravelDiary/TravelDiary.vue'
 import TravelPlan from '@/components/TravelPlan/TravelPlan.vue'

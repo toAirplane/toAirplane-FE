@@ -17,20 +17,21 @@
   width: 100%;      /* 화면 너비에 맞게 확장 */
   background-color: #FCF8F4;
   text-align: center;
-  padding: 10px 0;
+  padding: 15px 0;
   margin: 0;
+  height: 70px;
 }
 
 .footer-project-name,
 .footer-team-name {
   color: #a0948c;
-  font-size: 0.9rem;
+  font-size: 15px;
   margin: 0;
 }
 
 .footer-ssafy {
   color: #ffcba0;
-  font-size: 0.7rem;
+  font-size: 13px;
   padding-top: 20px;
   margin: 0;
 }
