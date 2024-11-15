@@ -11,13 +11,23 @@
 
 <style scoped>
 .footer {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   height: 100px;
   background-color: #FCF8F4;
-  color: #6B625D;
-  font-size: 2rem;
   text-align: center;
+}
+
+.footer-project-name,
+.footer-team-name {
+    color: #6B625D;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.footer-ssafy {
+    color: #FFB980;
+    font-size: 0.9rem;
 }
 </style>
