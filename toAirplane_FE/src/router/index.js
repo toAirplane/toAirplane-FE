@@ -1,47 +1,28 @@
-// import { createRouter, createWebHistory } from 'vue-router'
+// vue-router import
+import { createRouter, createWebHistory } from 'vue-router'
 
-// // 페이지 컴포넌트 import
-// import HomeView from 'views/HomeView.vue'
-// import DestinationView from 'views/DestinationView.vue'
-// import TripView from 'views/TripView.vue'
-// import BlogView from 'views/BlogView.vue'
-// import SignupView from 'views/SignupView.vue'
-// import LoginView from 'views/LoginView.vue'
+// 페이지 컴포넌트들 import
+import Home from '@/components/Main.vue'
+import FindMap from '@/components/FindMap/FindMap.vue'
+import TravelDiary from '@/components/TravelDiary/TravelDiary.vue'
+import TravelPlan from '@/components/TravelPlan/TravelPlan.vue'
+import Notice from '@/components/Notice/Notice.vue'
+import MyPage from '@/components/MyPage/MyPage.vue'
 
-// const router = createRouter({
-//   history: createWebHistory(import.meta.env.BASE_URL),
-//   routes: [
-//     {
-//       path: '/',
-//       name: 'home',
-//       component: HomeView, // 홈 페이지
-//     },
-//     {
-//       path: '/destination',
-//       name: 'destination',
-//       component: DestinationView, // 목적지 페이지
-//     },
-//     {
-//       path: '/trip',
-//       name: 'trip',
-//       component: TripView, // 여행 계획 페이지
-//     },
-//     {
-//       path: '/blog',
-//       name: 'blog',
-//       component: BlogView, // 블로그 페이지
-//     },
-//     {
-//       path: '/signup',
-//       name: 'signup',
-//       component: SignupView, // 회원가입 페이지
-//     },
-//     {
-//       path: '/login',
-//       name: 'login',
-//       component: LoginView, // 로그인 페이지
-//     },
-//   ],
-// })
+// 라우터 설정
+const routes = [
+  { path: '/', name: 'home', component: Home },
+  { path: '/findMap', name: 'findMap', component: FindMap },
+  { path: '/travelDiary', name: 'travelDiary', component: TravelDiary },
+  { path: '/travelPlan', name: 'travelPlan', component: TravelPlan },
+  { path: '/notice', name: 'notice', component: Notice },
+  { path: '/myPage', name: 'myPage', component: MyPage },
+]
 
-// export default router
+// createRouter로 라우터 인스턴스 생성
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL), // 브라우저 히스토리 모드 사용
+  routes, // 라우터 설정을 연결
+})
+
+export default router

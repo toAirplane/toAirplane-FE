@@ -18,7 +18,7 @@
   background-color: #FCF8F4;
   text-align: center;
   padding: 10px 0;
-  margin: 0;        /* 마진 제거 */
+  margin: 0;
 }
 
 .footer-project-name,
