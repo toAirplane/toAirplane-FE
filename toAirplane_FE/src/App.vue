@@ -48,7 +48,6 @@ function closeFindIdModal() {
 </script>
 
 <template>
-  <div id="app">
     <HeaderNav @open-signin="openSignInModal"></HeaderNav>
     <!-- 로그인 모달-->
     <SignInModal 
@@ -61,17 +60,6 @@ function closeFindIdModal() {
     <FindIdModal  :showFindIdModal="showFindIdModal" @closeFindIdModal="closeFindIdModal"/>
     <Main></Main>
     <Footer></Footer>
-  </div>
 </template>
 
-<style scoped>
-#app {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
-main {
-  flex: 1;
-}
-</style>
+<style scoped></style>

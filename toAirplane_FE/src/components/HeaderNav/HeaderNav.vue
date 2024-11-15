@@ -34,7 +34,7 @@ function toggleLogin() {
         class="nav-link"
         active-class="active" 
       > <!-- 활성화된 링크에 'active' 클래스를 추가 -->
-        {{ page === 'home' ? 'HOME' : page === 'findMap' ? '관광지 찾기' : '여행일지' }}
+        {{ page === 'home' ? 'HOME' : page === 'findMap' ? '여행지 찾기' : '여행 일지' }}
       </router-link>
 
       <!-- 로그인 상태에 따라 여행계획과 공지사항의 순서를 조정 -->
@@ -44,7 +44,7 @@ function toggleLogin() {
         class="nav-link"
         active-class="active"
       >
-        여행계획
+        여행 계획
       </router-link>
 
       <router-link
@@ -70,13 +70,6 @@ function toggleLogin() {
       </div>
     </div>
   </header>
-
-
-
-  <main>
-    <p>현재 페이지: {{ $route.name }}</p>
-    <!-- main content depending on the current route -->
-  </main>
 </template>
 
 <style scoped>
@@ -97,6 +90,8 @@ function toggleLogin() {
   justify-content: space-between;
   font-size: 35px;
   color: #35648c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
 .logo {

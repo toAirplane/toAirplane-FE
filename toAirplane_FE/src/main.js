@@ -2,11 +2,10 @@ import './main.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-
 import App from './App.vue'
 import router from './router'
 
-//fontAwesome 설정
+// FontAwesome 설정
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faPlaneDeparture } from '@fortawesome/free-solid-svg-icons'
