@@ -48,7 +48,7 @@ function closeFindIdModal() {
 </script>
 
 <template>
-  <HeaderNav @open-signin="openSignInModal"></HeaderNav>
+    <HeaderNav @open-signin="openSignInModal"></HeaderNav>
     <!-- 로그인 모달-->
     <SignInModal 
       @openSignUpModal="openSignUpModal" 

@@ -1,19 +1,21 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, defineEmits } from 'vue';
 import { useRouter } from 'vue-router'; // useRouter import
-
-/*
-  로그인 로그아웃 상태 때 수정
-  로그아웃 했을 때 바로 홈으로 이동되도록 하기 추가
-*/
 
 // 로그인 상태 변수 (로그인 여부를 확인)
 const isLoggedIn = ref(false); // 기본값은 로그아웃 상태
 
-// 로그인 상태 변경 함수 (임시 예제용)
+// 상위 컴포넌트로 이벤트를 보내는 함수
+const emit = defineEmits(['open-signin']);
+
+function openSignIn() {
+  emit('open-signin'); // 부모 컴포넌트에 모달을 여는 이벤트 전달
+}
+
 function toggleLogin() {
   isLoggedIn.value = !isLoggedIn.value;
 }
+
 </script>
 
 <template>
@@ -56,8 +58,9 @@ function toggleLogin() {
 
     <!-- 로그인/로그아웃 + 마이페이지 -->
     <div class="auth-buttons">
+    
       <!-- 로그인 버튼: 로그인되지 않았을 때만 표시 -->
-      <button v-if="!isLoggedIn" class="login-logout" @click="toggleLogin">로그인</button>
+      <button v-if="!isLoggedIn" class="login-logout" @click="openSignIn">로그인</button>
       <!-- 로그인된 상태에서 마이페이지, 로그아웃 버튼 -->
       <div v-else class="login-ing">
         <router-link to="/myPage" class="nav-link">
